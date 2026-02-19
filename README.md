@@ -31,3 +31,4 @@ Organização modular de arquivos
 GitHub Pages
 
 O projeto está disponível online em:
+https://leogomess91.github.io/web_project_homeland/
