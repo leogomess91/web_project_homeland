@@ -36,7 +36,7 @@
   line-height: 163%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .intro {
     max-width: 720px;
     padding: 0 24px;
@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 320px) {
   .intro {
     max-width: 288px;
     padding: 0 16px;
@@ -64,4 +64,13 @@
     font-size: 16px;
     line-height: 1.63;
   }
+}
+
+.intro__text-author {
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.intro__text-paragraph {
+  margin-bottom: 0;
 }

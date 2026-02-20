@@ -5,6 +5,12 @@
   color: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .content {
   max-width: 1280px;
   margin: 0 auto;

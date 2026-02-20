@@ -9,7 +9,7 @@
   height: 70px;
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 320px) {
   .header {
     padding-top: 20px;
   }
