@@ -1,35 +1,93 @@
-# Tripleten web_project_homeland
+# 🌍 De Pátria para Pátria — Web Project Homeland
 
-Projeto 5 — De Pátria para Pátria
+Projeto desenvolvido durante o curso de Desenvolvimento Web da TripleTen, com foco na construção de interfaces responsivas modernas utilizando HTML e CSS.
 
-Descrição do projeto
+---
 
-Este projeto foi desenvolvido como parte do Sprint 5 do curso de Desenvolvimento Web da TripleTen.
+## 📖 Sobre o projeto
 
-A página apresenta uma galeria digital intitulada “De Pátria para Pátria”, com foco em tipografia, layout responsivo e organização de código seguindo a metodologia BEM.
+"De Pátria para Pátria" é uma página web responsiva que apresenta histórias, imagens e locais de diferentes partes do mundo, destacando diversidade cultural através de uma galeria visual e seções informativas.
 
-O objetivo principal foi construir uma página responsiva baseada em um layout fornecido no Figma, aplicando boas práticas de HTML semântico, CSS modularizado e organização em arquitetura BEM Flat.
+O projeto foi construído a partir de um layout profissional fornecido no Figma, seguindo práticas utilizadas no fluxo real de desenvolvimento front-end.
 
-Funcionalidades
+---
 
-Layout responsivo (desktop, tablet e mobile)
-Estrutura organizada com metodologia BEM
-Uso de normalize.css
-Importação de fontes locais (Inter)
-Estrutura modular com CSS dividido por blocos
-Organização de pastas seguindo padrão profissional
+## 🚀 Funcionalidades
 
-Tecnologias e técnicas utilizadas
-HTML5
-CSS3
-Metodologia BEM (BEM Flat)
-Flexbox
-Media Queries (Desktop-first)
-Normalize.css
+- Layout totalmente responsivo (Desktop, Tablet e Mobile)
+- Galeria de imagens utilizando **CSS Grid**
+- Seção de locais estruturada com Grid Layout
+- Imagens otimizadas para performance
+- Botões interativos com hover effects
+- Estrutura semântica acessível
+- Uso adequado de atributos `alt` para acessibilidade
+- Organização modular de estilos
 
-Organização modular de arquivos
+---
 
-GitHub Pages
+## 🛠️ Tecnologias utilizadas
 
-O projeto está disponível online em:
-https://leogomess91.github.io/web_project_homeland/
+- HTML5
+- CSS3
+- CSS Grid Layout
+- Flexbox
+- Media Queries (Desktop-first)
+- Metodologia BEM (BEM Flat)
+- Normalize.css
+- Git & GitHub
+- GitHub Pages
+
+---
+
+## 📂 Estrutura do projeto
+
+web_project_homeland/
+│
+├── blocks/
+│ ├── header.css
+│ ├── intro.css
+│ ├── photo-grid.css
+│ ├── places.css
+│ └── footer.css
+│
+├── images/
+├── pages/
+│ └── index.css
+│
+└── index.html
+
+---
+
+## 📱 Responsividade
+
+O layout foi adaptado utilizando media queries para diferentes breakpoints:
+
+- Desktop ≥ 1280px
+- Tablet ≤ 768px
+- Mobile ≤ 320px
+
+Garantindo ausência de overflow e consistência visual entre dispositivos.
+
+---
+
+## 🌐 Deploy
+
+O projeto está disponível online via GitHub Pages:
+
+👉 https://leogomess91.github.io/web_project_homeland/
+
+---
+
+## 👨‍💻 Autor
+
+**Leandro Gomes**  
+Desenvolvedor Web em formação
+
+---
+
+## 📌 Status do projeto
+
+✅ Versão 1.6 finalizada  
+✅ Layout responsivo validado  
+✅ Estrutura modular seguindo metodologia BEM  
+✅ Projeto pronto para portfólio
