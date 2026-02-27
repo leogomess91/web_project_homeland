@@ -16,6 +16,7 @@
     "button paragraphs";
   column-gap: 40px;
   row-gap: 48px;
+  align-items: start;
 }
 
 .place__title {
@@ -56,9 +57,9 @@
 .place__image {
   grid-area: image;
   width: 100%;
-  max-width: 460px;
-  display: block;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  display: block;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
 }
 
@@ -99,9 +100,9 @@
 
 .place__button:hover {
   opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-/* Tablet */
 @media screen and (max-width: 768px) {
   .places {
     max-width: 720px;
@@ -129,7 +130,34 @@
   }
 }
 
-/* Mobile */
+@media screen and (max-width: 640px) {
+  .places {
+    padding: 0 16px;
+    gap: 50px;
+  }
+
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs"
+      "button";
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  .place__image {
+    max-width: 100%;
+  }
+
+  .place__button {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .places {
     max-width: 288px;
