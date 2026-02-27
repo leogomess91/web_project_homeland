@@ -1,0 +1,164 @@
+.places {
+  max-width: 984px;
+  margin: 92px auto 0;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-areas:
+    "title website"
+    "image paragraphs"
+    "button paragraphs";
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+.place__title {
+  grid-area: title;
+  margin: 0;
+  font-size: 72px;
+  line-height: 1.06;
+  font-weight: 900;
+}
+
+.place__website {
+  grid-area: website;
+  align-self: end;
+}
+
+.place__url-heading {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.place__artists {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.place__artist {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 400;
+}
+
+.place__image {
+  grid-area: image;
+  width: 100%;
+  max-width: 460px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.place__paragraphs {
+  grid-area: paragraphs;
+}
+
+.place__paragraph {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.63;
+  font-weight: 400;
+}
+
+.place__paragraph + .place__paragraph {
+  margin-top: 26px;
+}
+
+.place__button {
+  grid-area: button;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 13px 20px;
+  border-radius: 4px;
+
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+}
+
+.place__button:hover {
+  opacity: 0.8;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: 720px;
+    padding: 0 24px;
+    gap: 72px;
+  }
+
+  .place {
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+    row-gap: 48px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+  }
+
+  .place__image {
+    max-width: 340px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 320px) {
+  .places {
+    max-width: 288px;
+    padding: 0 16px;
+    gap: 50px;
+  }
+
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs"
+      "button";
+    row-gap: 30px;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__image {
+    max-width: 100%;
+  }
+
+  .place__button {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
