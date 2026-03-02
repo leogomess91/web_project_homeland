@@ -24,7 +24,7 @@
 .intro__text-author {
   max-width: 732px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 34px;
   text-align: right;
   margin-top: 10px;
@@ -66,11 +66,3 @@
   }
 }
 
-.intro__text-author {
-  font-size: 16px;
-  line-height: 1.63;
-}
-
-.intro__text-paragraph {
-  margin-bottom: 0;
-}
